@@ -1,2 +1,5 @@
 # min
-Min is a final project
+ ## Min is a final project
+'''
+Owners Rafa, Arnau, Pau.
+'''
