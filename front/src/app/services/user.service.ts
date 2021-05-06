@@ -14,14 +14,25 @@ export class UserService {
     nombre: "",
     apellidos: "",
     email: "",
-    password: "",
-    createdAt: "",
-    updatedAt: "",
-    _id: ""
+    password: ""
   };
   user : User[];
 
   getUsers() {
     return this.http.get<User[]>(this.URL_API);
+  }
+
+  createUser(user: User) {
+    return this.http.post(this.URL_API, user);
+  }
+
+  updateUser(user: User){
+    console.log("llego")
+    return this.http.put(`${this.URL_API}/${user._id}`, user);
+  }
+
+  deleteUser(_id: string){
+    // return this.http.delete(this.URL_API + "/" + _id) son lo mismo
+    return this.http.delete(`${this.URL_API}/${_id}`);
   }
 }
