@@ -10,6 +10,15 @@ export class UserService {
 
   URL_API = "http://localhost:4000/api/users"
 
+  form_user: User = {
+    nombre: "",
+    apellidos: "",
+    email: "",
+    password: "",
+    createdAt: "",
+    updatedAt: "",
+    _id: ""
+  };
   user : User[];
 
   getUsers() {
