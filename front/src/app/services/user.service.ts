@@ -27,7 +27,7 @@ export class UserService {
   }
 
   updateUser(user: User){
-    console.log("llego")
+    // console.log("llego")
     return this.http.put(`${this.URL_API}/${user._id}`, user);
   }
 
