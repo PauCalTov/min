@@ -11,3 +11,19 @@ Content-Type: application/json
     "email": "a18paucaltov@inspedralbes.cat",
     "password": "123456"
 }
+
+###
+GET http://localhost:4000/api/wallets
+
+###
+POST http://localhost:4000/api/wallets
+Content-Type: application/json
+
+{
+    "nombre": "Cartera Arnau",
+    "moneda": "Dogecoin",
+    "direccion": "Calle Falsa",
+    "saldo": "50.5",
+    "valor": "10"
+}
+

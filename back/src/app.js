@@ -20,5 +20,6 @@ app.use(express.urlencoded({extended: false}));
 
 
 app.use("/api/users", require('./routes/users.routes')); //ruta por defecto para este crud
+app.use("/api/wallets", require('./routes/wallets.routes')); //ruta por defecto para este crud
 
 module.exports = app;
