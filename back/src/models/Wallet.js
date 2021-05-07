@@ -6,8 +6,11 @@ const walletSchema = new Schema({
     direccion: {type: String, required: true},
     saldo: {type: String, required: true},
     valor_inicial: {type: String, required: true},
-    valor_actual: {type: String, required: true}
-    
+    valor_actual: {type: String, required: true},
+    usuario: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    }
 }, {
     timestamps: true,
     versionKey: false
