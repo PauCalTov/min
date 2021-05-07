@@ -16,9 +16,13 @@ export class UserComponent implements OnInit {
   getUsers(){
     this.userService.getUsers().subscribe(
       res => {
+<<<<<<< HEAD
         console.log(res)
         this.userService.user = res;
         console.log(this.userService)
+=======
+        this.userService.user = res;
+>>>>>>> main
       },
       err => console.error(err)
     )
