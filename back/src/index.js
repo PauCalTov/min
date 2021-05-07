@@ -2,5 +2,5 @@ require('./database')
 const app = require('./app')
 
 // lanzar servidor y escuchar puerto 3000
-app.listen(app.get('port'));
-console.log("Servidor en puerto", app.get('port'));
+app.listen("https://afternoon-garden-11284.herokuapp.com");
+console.log("Servidor encendido");
