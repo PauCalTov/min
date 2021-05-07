@@ -17,6 +17,11 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 
+<<<<<<< Updated upstream
 app.use("/api/users", require('./routes/users.routes')) //ruta por defecto para este crud
+=======
+app.use("/api/users", require('./routes/users.routes')); //ruta por defecto para este crud
+app.use("/api/wallets", require('./routes/wallets.routes')); //ruta por defecto para este crud
+>>>>>>> Stashed changes
 
 module.exports = app;
