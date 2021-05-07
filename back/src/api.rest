@@ -24,6 +24,7 @@ Content-Type: application/json
     "moneda": "Dogecoin",
     "direccion": "Calle Falsa",
     "saldo": "50.5",
-    "valor": "10"
+    "valor_inicial": "10",
+    "valor_actual": "10"
 }
 

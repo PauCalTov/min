@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h4 class="text-center">Wallet</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre de la Wallet">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Moneda">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Direccion">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Saldo">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Moneda</th>
+                    <th>Direccion</th>
+                    <th>Saldo</th>
+                    <th>Valor Inicial</th>
+                    <th>Valor Actual</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let wallet of walletService.wallet">
+                    <td>{{ wallet.nombre }}</td>
+                    <td>{{ wallet.moneda }}</td>
+                    <td>{{ wallet.direccion }}</td>
+                    <td>{{ wallet.saldo }}</td>
+                    <td>{{ wallet.valor_inicial }}</td>
+                    <td>{{ wallet.valor_actual }}</td>
+                    <td>
+                        <button class="btn btn-secondary btn-sm">
+                            <i class="material-icons">edit</i>
+                        </button>
+                        <button class="btn btn-danger btn-sm">
+                            <i class="material-icons">delete</i>
+                        </button>
+                    </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

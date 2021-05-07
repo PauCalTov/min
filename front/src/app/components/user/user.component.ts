@@ -23,9 +23,9 @@ export class UserComponent implements OnInit {
   getUsers() {
     this.userService.getUsers().subscribe(
       res => {
-        console.log(res)
+        // console.log(res)
         this.userService.user = res;
-        console.log(this.userService)
+        // console.log(this.userService)
       },
       err => console.error(err)
     );
@@ -61,7 +61,7 @@ export class UserComponent implements OnInit {
     if (confirm("Seguro que lo quieres borrar?")) {
       this.userService.deleteUser(id).subscribe(
         res => {
-          console.log(res)
+          // console.log(res)
           this.getUsers();
         },
         err => console.error(err)
