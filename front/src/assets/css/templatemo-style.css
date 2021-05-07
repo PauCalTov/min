@@ -139,11 +139,7 @@ p {
 	background-image: url(../img/logoFinal.png);
 
 }
-.navbar-brand em {
-	font-style: normal;
-	color: #efb810;
-	font-size: 32px;
-}
+
 .header.active .navbar-brand {
 	color: #121212!important;
 }
@@ -211,7 +207,7 @@ bootstrap.min.css:5
 
 .baner-content {
 	width: 100%;
-  	padding-top: 35vh;
+  	padding-top: 25vh;
   	text-align: center;
   	background-image: url(../img/banner_bg.jpg);
   	vertical-align: middle;
@@ -222,21 +218,10 @@ bootstrap.min.css:5
 }
 
 .baner-content .text-content h2 {
-	font-size: 80px;
-	font-weight: 800;
+	font-size: 100px;
+	font-weight: 900;
 	color: white;
-	padding-bottom: 35px;
-}
-
-.baner-content .text-content h2 span {
-	font-weight: 700;
-	color: #33c1cf!important;
-}
-
-.baner-content .text-content h2 em {
-	font-style: normal;
-	font-weight: 500;
-	color: #33c1cf!important;
+	padding-bottom: 45px;
 }
 
 .baner-content .text-content p {
