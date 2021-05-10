@@ -11,14 +11,13 @@ export class WalletService {
 
   URL_API = "http://localhost:4000/api/wallets"
 
-  form_wallet: Wallet = {
+  form_user: Wallet = {
     nombre: "",
     moneda: "",
     direccion: "",
     saldo: "",
     valor_inicial: "",
-    valor_actual: "...",
-    usuario: ""
+    valor_actual: ""
   };
   
   wallet : Wallet[];
@@ -28,9 +27,6 @@ export class WalletService {
   }
 
   createWallet(wallet: Wallet) {
-    wallet.valor_inicial="Poner valor Real";
-    wallet.valor_actual="Poner valor Real";
-    // wallet.usuario="Poner ID Real";
     return this.http.post(this.URL_API, wallet);
   }
 
