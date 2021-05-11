@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { WalletComponent } from './components/wallet/wallet.component';
+import { MonedaComponent } from './src/app/components/moneda/moneda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
-    WalletComponent
+    WalletComponent,
+    MonedaComponent
   ],
   imports: [
     BrowserModule,

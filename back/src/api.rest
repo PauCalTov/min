@@ -28,3 +28,6 @@ Content-Type: application/json
     "valor_actual": "10"
 }
 
+
+###
+GET https://api.coingecko.com/api/v3/coins/list
